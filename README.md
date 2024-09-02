@@ -28,8 +28,7 @@ return {
   dependencies = { "nvim-telescope/telescope.nvim" },
   lazy = false,
   config = function()
-    require("telescope-colorscheme-persist.nvim").setup({
-    })
+    require("telescope-colorscheme-persist").setup({})
   end,
 }
 
