@@ -101,7 +101,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 If you encounter any issues, you can enable debug mode in the configuration to get more detailed logging:
 
 ```
-require('telescope-colorscheme-persist.nvim').setup({
+require('telescope-colorscheme-persist').setup({
   debug = true
 })
 ```
