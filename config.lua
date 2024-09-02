@@ -1,5 +1,5 @@
 local M = {
-  file_path = vim.fn.stdpath("cache") .. "/telescope-colorscheme-persist/.nvim.colorscheme-persist.lua",
+  file_path = vim.fn.stdpath("cache") .. "/telescope-colorscheme-persist.nvim/.nvim.colorscheme-persist.lua",
   fallback = "default",
   picker_opts = require("telescope.themes").get_dropdown(),
   debug = false,

@@ -24,12 +24,11 @@ A Neovim plugin that allows you to persist your colorscheme selection across Neo
 Add the following to your Neovim configuration:
 ```
 return {
-  "tingey21/telescope-colorscheme-persist",
+  "tingey21/telescope-colorscheme-persist.nvim",
   dependencies = { "nvim-telescope/telescope.nvim" },
   lazy = false,
   config = function()
-    require("telescope-colorscheme-persist").setup({
-      debug = false,
+    require("telescope-colorscheme-persist.nvim").setup({
     })
   end,
 }
@@ -39,7 +38,7 @@ return {
 ### Default Configuration
 ```
 {
-  file_path = vim.fn.stdpath("cache") .. "/telescope-colorscheme-persist/.nvim.colorscheme-persist.lua",
+  file_path = vim.fn.stdpath("cache") .. "/telescope-colorscheme-persist.nvim/.nvim.colorscheme-persist.lua",
   fallback = "default",
   picker_opts = require("telescope.themes").get_dropdown(),
   debug = false,
@@ -103,7 +102,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 If you encounter any issues, you can enable debug mode in the configuration to get more detailed logging:
 
 ```
-require('telescope-colorscheme-persist').setup({
+require('telescope-colorscheme-persist.nvim').setup({
   debug = true
 })
 ```

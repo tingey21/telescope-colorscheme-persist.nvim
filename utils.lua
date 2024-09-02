@@ -1,4 +1,4 @@
-local config = require("telescope-colorscheme-persist.config")
+local config = require("telescope-colorscheme-persist.nvim.config")
 
 local M = {}
 
