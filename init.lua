@@ -1,5 +1,5 @@
-local config = require("telescope-colorscheme-persist.nvim.config")
-local utils = require("telescope-colorscheme-persist.nvim.utils")
+local config = require("telescope-colorscheme-persist.config")
+local utils = require("telescope-colorscheme-persist.utils")
 local telescope = require("telescope.builtin")
 local M = {}
 
