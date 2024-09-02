@@ -1,7 +1,7 @@
 {
-  "name": "telescope-colorscheme-persist.nvim",
+  "name": "telescope-colorscheme-persist",
   "root": ".",
-  "dev": true,
+  "dev": false,
   "lazy": false,
   "dependencies": [
     "nvim-telescope/telescope.nvim"
