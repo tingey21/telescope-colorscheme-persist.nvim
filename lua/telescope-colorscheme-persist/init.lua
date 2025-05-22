@@ -85,7 +85,9 @@ function M.setup(opts)
   if M.current ~= vim.g.colors_name then
     M.apply_colorscheme(M.current)
   end
-  vim.keymap.set("n", config.keybind, M.picker, { desc = "Open colorscheme picker" })
+  if config.keybind then
+    vim.keymap.set("n", config.keybind, M.picker, { desc = "Open colorscheme picker" })
+  end
 end
 
 return M
