@@ -9,7 +9,7 @@ local M = {
 function M.setup(opts)
   opts = opts or {}
   for k, v in pairs(opts) do
-    if type(M[k]) == type(v) then
+    if type(M[k]) == type(v) or (k == 'keybind' and v == false) then
       M[k] = v
     else
       vim.notify("Invalid option type for " .. k, vim.log.levels.WARN)
